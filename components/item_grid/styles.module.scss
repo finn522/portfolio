@@ -1,0 +1,16 @@
+:local {
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    li {
+      list-style-type: none;
+      margin-left: 15px;
+      margin-right: 15px;
+      margin-bottom: 30px;
+      width: calc(33.33% - 30px);
+      flex-basis: calc(33.33% - 30px);
+    }
+  }
+}
