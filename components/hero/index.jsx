@@ -3,13 +3,15 @@ import Image from "next/image";
 const Hero = ({ content }) => {
   return (
     <div>
-      <h1>{content.title}</h1>
-      <Image
-        src={content.image}
-        width="500"
-        height="500"
-        alt={content.title + " image"}
-      />
+      <div className="wrapper">
+        <h1>{content.title}</h1>
+        <Image
+          src={content.image}
+          width="500"
+          height="500"
+          alt={content.title + " image"}
+        />
+      </div>
     </div>
   );
 };

@@ -3,8 +3,12 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Open Sans", sans-serif;
+}
+body {
   background-color: #1a2033;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(26, 32, 51, 1) 50%, rgba(49, 60, 96, 1) 100%);
   color: white;
+  min-width: 320px;
 }
 h1,
 h2,
@@ -36,4 +40,5 @@ main {
 
 ul {
   padding: 0;
+  list-style: none;
 }

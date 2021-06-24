@@ -1,0 +1,24 @@
+:local {
+    .block {
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        bottom: 100px;
+        left: -1000px;
+        cursor: pointer;
+        transition: left 300ms ease;
+        z-index: 1;
+        svg {
+            width: 25px;
+            color: black;
+            transform: rotate(90deg);
+        }
+    }
+    .revealed {
+        left: 50px;
+    }
+}

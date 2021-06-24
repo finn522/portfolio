@@ -6,6 +6,8 @@ import Hero from "components/hero";
 import TextBlock from "components/textblock";
 import ImageBlock from "components/imageblock";
 import ListBlock from "components/listblock";
+import UrlBlock from "components/urlblock"
+import Return from "components/return";
 
 const Project = ({ data }) => {
   const router = useRouter();
@@ -18,6 +20,8 @@ const Project = ({ data }) => {
         return <ImageBlock content={content} />;
       case "list":
         return <ListBlock content={content} />;
+      case "url":
+        return <UrlBlock content={content} />
       default:
         return null;
     }
@@ -34,6 +38,8 @@ const Project = ({ data }) => {
           data.block.map((block) => {
             return renderSwitch(block.type, block.content);
           })}
+        <Return />
+
       </div>
     </>
   );

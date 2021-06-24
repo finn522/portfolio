@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Portfolio</title>
+        <title>Home | Portfolio</title>
         <meta name="description" content="My very own Porfolio" />
       </Head>
       <>
@@ -17,11 +17,12 @@ const Home = () => {
         <section>
           <div
             id="projects"
-            style={{ position: "absolute", marginTop: "-140px" }}
+            style={{ position: "absolute", marginTop: "-50px" }}
           ></div>
           <ItemGrid title={"Werk projecten"} items={projects} />
-          <ItemGrid title={"Persoonlijke projecten"} items={personal} />
           <ItemGrid title={"Onderzoeks projecten"} items={research} />
+          <ItemGrid title={"Persoonlijke projecten"} items={personal} />
+        
         </section>
       </>
     </>

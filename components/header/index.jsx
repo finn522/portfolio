@@ -1,6 +1,6 @@
 import Link from "next/link";
 import styles from "./styles.module.scss";
-
+import ChevronDown from "public/icons/chevron_down";
 const Header = () => {
   return (
     <div className={styles.header}>
@@ -11,9 +11,9 @@ const Header = () => {
           </Link>
           <div className={styles.navigation}>
             <ul>
-              <li>Projecten</li>
-              <li>Vaardigheden</li>
-              <li>Over mij</li>
+              <li><Link href="/#projects" >Projecten</Link></li>
+              <li><Link href="/skills">Vaardigheden</Link></li>
+              <li><Link href="/about">Over mij</Link></li>
             </ul>
           </div>
         </div>

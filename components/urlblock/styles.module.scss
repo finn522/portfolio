@@ -1,0 +1,15 @@
+:local {
+    .content {
+        h2 {
+            svg {
+                width: 30px;
+                transition: 300ms ease transform;
+            }
+            &:hover{
+                svg{
+                    transform:translateX(10px)
+                }
+            }
+        }
+    }
+}
