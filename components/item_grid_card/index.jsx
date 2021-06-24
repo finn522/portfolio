@@ -12,7 +12,7 @@ const ItemGridCard = ({ name, image, url }) => {
           src={image.src}
           width="470"
           height="237"
-          alt={styles.title + " background"}
+          alt={name + " background"}
         />
       </li>
     </Link>

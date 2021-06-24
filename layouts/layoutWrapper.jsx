@@ -4,7 +4,7 @@ const LayoutWrapper = (props) => {
   return (
     <>
       <Header />
-      <main className={"wrapper"}>{props.children}</main>
+      <main>{props.children}</main>
     </>
   );
 };

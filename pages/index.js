@@ -12,12 +12,18 @@ const Home = () => {
         <title>Portfolio</title>
         <meta name="description" content="My very own Porfolio" />
       </Head>
-      <div>
+      <>
         <HeroHome />
-        <ItemGrid title={"Werk projecten"} items={projects} />
-        <ItemGrid title={"Persoonlijke projecten"} items={personal} />
-        <ItemGrid title={"Onderzoeks projecten"} items={research} />
-      </div>
+        <section>
+          <div
+            id="projects"
+            style={{ position: "absolute", marginTop: "-140px" }}
+          ></div>
+          <ItemGrid title={"Werk projecten"} items={projects} />
+          <ItemGrid title={"Persoonlijke projecten"} items={personal} />
+          <ItemGrid title={"Onderzoeks projecten"} items={research} />
+        </section>
+      </>
     </>
   );
 };
